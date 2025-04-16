@@ -1,0 +1,33 @@
+# ByteSight
+
+ByteSight is an open-source, AI-powered wearable assistant designed to help visually impaired individuals navigate their environments more safely and independently. By running a lightweight object detection model on low-power hardware like the Raspberry Pi Zero, ByteSight provides real-time audio alerts about obstacles and important environmental cues.
+
+## Overview
+
+Inspired by personal experiences with accessibility challenges, ByteSight was created to offer an affordable, customizable solution for enhancing mobility and safety. The project leverages advances in machine learning and edge computing to build a tool that makes a tangible impact on everyday life.
+
+## Key Features
+
+- **Real-Time Object Detection:** Utilizes a fine-tuned, lightweight model optimized for low-power devices.
+- **Audio Feedback:** Delivers contextual alerts via bone-conduction headphones to inform users of obstacles and environmental details.
+- **Open-Source & Community-Driven:** All code, hardware designs, and documentation are publicly available to encourage collaboration and customization.
+- **User-Centric Design:** Developed with continuous feedback from the visually impaired community to ensure practical usability.
+
+## Grant Objectives
+
+With the support of this grant, ByteSight will:
+- **Fine-Tune the Model:** Achieve 90%+ accuracy on custom, accessibility-focused datasets with optimized inference times.
+- **User Testing:** Onboard at least 15 users to gather structured feedback through surveys and interviews.
+- **Revenue Milestone:** Generate $100 in revenue from at least 3 early adopters during the grant period.
+- **Deploy a Fully-Functional Prototype:** Demonstrate a complete, deployable solution on a low-cost platform.
+
+## How to Get Involved
+
+We welcome contributions from developers, designers, and accessibility advocates! You can:
+- **Contribute Code:** Fork the repository, implement improvements, and submit pull requests.
+- **Provide Feedback:** Test the prototype and share your insights via our GitHub Issues or feedback form.
+- **Collaborate:** Help us refine the design and expand our reach to the wider community.
+
+## Contact
+
+For questions, contributions, or more information, please reach out via GitHub Issues or contact Brendan Jorenby at brendanjorenby@gmail.com
