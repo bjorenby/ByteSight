@@ -1,32 +1,112 @@
 # ByteSight
 
-ByteSight is an open-source, AI-powered wearable assistant designed to help visually impaired individuals navigate their environments more safely and independently. By running a lightweight object detection model on low-power hardware like the Raspberry Pi Zero, ByteSight provides real-time audio alerts about obstacles and important environmental cues.
+ByteSight is an assistive AI tool designed to make visual data — from graphs to everyday objects — accessible to blind and visually impaired individuals. By using computer vision and natural language processing, ByteSight analyzes images and translates them into detailed audio or screen-reader-friendly descriptions.
 
-## Overview
+## 🚀 Overview
 
-Inspired by personal experiences with accessibility challenges, ByteSight was created to offer an affordable, customizable solution for enhancing mobility and safety. The project leverages advances in machine learning and edge computing to build a tool that makes a tangible impact on everyday life.
+Our initial prototype focuses on describing **financial graphs** (like candlestick charts or line plots) in accessible formats. We’re expanding ByteSight’s capabilities to work with general images — turning visual scenes, signs, and documents into real-time audio descriptions.
 
-## Key Features
+We are also developing **smart glasses** that integrate our software with a lightweight camera and speaker. The goal: a wearable tool that describes a blind user's surroundings, on the go.
 
-- **Real-Time Object Detection:** Utilizes a fine-tuned, lightweight model optimized for low-power devices.
-- **Audio Feedback:** Delivers contextual alerts via bone-conduction headphones to inform users of obstacles and environmental details.
-- **Open-Source & Community-Driven:** All code, hardware designs, and documentation are publicly available to encourage collaboration and customization.
-- **User-Centric Design:** Developed with continuous feedback from the visually impaired community to ensure practical usability.
+---
 
-## Grant Objectives
+## 👁️ Why ByteSight?
 
-With the support of this grant, ByteSight will:
-- **Fine-Tune the Model:** Achieve 90%+ accuracy on custom, accessibility-focused datasets with optimized inference times.
-- **User Testing:** Onboard at least 15 users to gather structured feedback through surveys and interviews.
-- **Revenue Milestone:** Generate $100 in revenue from at least 3 early adopters during the grant period.
-- **Deploy a Fully-Functional Prototype:** Demonstrate a complete, deployable solution on a low-cost platform.
+Blind and visually impaired individuals often encounter inaccessible content — especially in finance, data science, or in everyday navigation. ByteSight breaks these barriers by:
 
-## How to Get Involved
+- Describing images, graphs, and environments through detailed alt-text or speech
+- Enhancing independence for those who rely on screen readers or audio cues
+- Providing real-time feedback using affordable, portable hardware
 
-We welcome contributions from developers, designers, and accessibility advocates! You can:
-- **Contribute Code:** Fork the repository, implement improvements, and submit pull requests.
-- **Provide Feedback:** Test the prototype and share your insights via our GitHub Issues or feedback form.
-- **Collaborate:** Help us refine the design and expand our reach to the wider community.
+---
+
+## 🔧 How It Works
+
+1. **Image Input**  
+   Users upload an image (or use a webcam for live input). Future iterations will allow direct integration with mobile camera apps or smart glasses.
+
+2. **Cloud-Based Processing (MVP)**  
+   Images are sent to a cloud-based server that uses pre-trained computer vision models (like OpenAI's GPT-4 Vision or Meta's Segment Anything Model) to analyze content.
+
+3. **Natural Language Generation**  
+   Descriptions are crafted using GPT-based language models, then either:
+   - Read aloud via text-to-speech
+   - Sent to screen readers
+   - (Future) Translated to braille using refreshable braille displays
+
+4. **Wearable Prototype**  
+   A Raspberry Pi-based glasses prototype is being developed to test real-world use cases.
+
+---
+
+## 🌐 MVP Hosting Plan
+
+To reduce complexity and cost during development, we will:
+- Deploy the model using **cloud inference APIs** (e.g. Hugging Face, Replicate, or OpenAI API)
+- Start with a simple **Flask + React** frontend for user uploads and outputs
+- Use GitHub Actions for CI/CD and logging user feedback for improvements
+
+---
+
+## 💸 Monetization Strategy
+
+ByteSight is mission-driven, but sustainability is key. Possible monetization paths:
+
+- **Freemium Model**: Free for basic use, with subscriptions for high-volume API access or advanced features.
+- **Institutional Licenses**: Partner with disability services at universities or nonprofits.
+- **Hardware Bundle**: Sell a low-cost smart glasses kit that runs ByteSight on-device or via mobile tethering.
+
+---
+
+## 📣 Distribution Strategy
+
+1. **Blind Tech Communities**: Collaborate with organizations like the American Council of the Blind and school accessibility programs.
+2. **Social Media + Demos**: Share demos on Twitter/X and Reddit to attract early users and testers.
+3. **Hackathons + Feedback**: Participate in disability innovation events to get real-world feedback.
+
+---
+
+## ✅ Roadmap
+
+- [x] Build MVP that processes and describes financial charts
+- [ ] Add support for general image categories (e.g. documents, streetscapes)
+- [ ] Launch web app for public testing
+- [ ] Prototype smart glasses with voice output
+- [ ] Partner with early users for usability feedback
+- [ ] Translate descriptions into refreshable braille
+
+---
+
+## 📦 Grant Goals
+
+If awarded funding, we will:
+
+- Expand the dataset and improve model output quality
+- Launch a test site and collect user feedback
+- Build a v1 prototype of the smart glasses for live-use testing
+- Begin outreach to blind user communities
+
+---
+
+## 🙋‍♂️ About the Builder
+
+Hi! I'm a high school student passionate about accessibility, finance, and AI. I’m excited to build ByteSight as a tool that empowers blind individuals to interact with data and the world around them more freely.
+
+I'm currently testing MVPs with visually impaired students and refining the project weekly — and I’m always open to feedback.
+
+---
+
+## 🧠 Feedback Reflections
+
+This repo was created as part of my application to the **Trelis Grant**. In response to reviewer feedback:
+
+- I’ve added detailed documentation to clarify the concept and development plan
+- I’m starting with cloud-hosted models for faster iteration
+- I’m developing a monetization and outreach plan early in the process
+- I’ll focus on user testing to prove utility before full-scale development
+
+Thanks for considering ByteSight 🙏
+
 
 ## Contact
 
